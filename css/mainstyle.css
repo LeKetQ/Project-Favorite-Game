@@ -47,7 +47,6 @@ header{
 /* NAV */
 nav{
     grid-area: nav;
-    display: block;
 }
 
 nav ul{
@@ -55,26 +54,18 @@ nav ul{
 }
 
 nav li{
-    margin-top: 20px;
+    margin-top: 10px;
     border: 2px solid goldenrod;
     width: 100px;
     padding: 5px;
     background-color: black;
 }
 
-nav a{
+a{
     color: whitesmoke;
     text-decoration: none;
-    display: block;
 }
 
-nav li:hover{
-    background-color: white;
-}
-
-nav a:hover{
-    color: black;
-}
 
 
 /* MAIN */
@@ -149,10 +140,21 @@ footer{
         "footer";}
 
 
-    main{
-        grid-area: main;
-        display: block;
-    }
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    padding-inline-start: 0px;
+}
+
+
+main{
+    grid-area: main;
+    display: block;
+}
+
 
 video{
     grid-area: trailer;
