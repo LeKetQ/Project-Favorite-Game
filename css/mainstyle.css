@@ -1,13 +1,15 @@
+
+/* WITCHER FONT */
 @font-face {
     font-family: "Witcher Font";
-    src: url(/fonts/witcherFont.ttf);
-}
+    src: url(/fonts/witcherFont.ttf);}
+
+
 
 /* HTML */
 html{
     font-family: 'Witcher Font';
-    color: goldenrod;
-}
+    color: goldenrod;}
 
 
 
@@ -24,8 +26,7 @@ body{
     grid-template-areas: 
     "header header header"
     "nav main aside"
-    "footer footer footer";
-}
+    "footer footer footer";}
 
 
 
@@ -33,21 +34,19 @@ body{
 header{
     grid-area: header;
     position: relative;
-    animation: headermove 5s;
-}
+    animation: headermove 5s;}
 
 #titlePicture{
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 30%;
     margin-top: 20px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px;}
 
 @keyframes headermove {
     from {top: 500px;}
-    to {top: 0px;}
-  }
+    to {top: 0px;}  }
+
 
 
 /* NAV */
@@ -55,57 +54,50 @@ nav{
     grid-area: nav;
     opacity: 0.7;
     position: relative;
-    animation: navmove 3s;
-}
+    animation: navmove 3s;}
 
 nav ul{
-    list-style-type: none;
-}
+    list-style-type: none;}
 
 nav li{
     margin-top: 10px;
     border: 2px solid goldenrod;
     width: 100px;
     padding: 5px;
-    background-color: black;
-}
+    background-color: black;}
 
-a{
+nav a{
     color: whitesmoke;
-    text-decoration: none;
-}
+    text-decoration: none;}
 
 nav li:hover{
-    transform:scale(2.0);
-}
+    transform:scale(2.0);}
 
-@keyframes navmove {
+@keyframes navmove{
     from {left: -500px;}
-    to {left: 0px;}
-  }
+    to {left: 0px;}  }
+
+
 
 /* MAIN */
 main{
     grid-area: main;
     display: flex;
     position: relative;
-    animation: mainmove 8s;
-}
+    animation: mainappear 8s;}
 
 article{
     width: 50%;
-    margin: 10px;
-}
+    margin: 10px;}
 
 video{
     max-width: 100%;
-    object-fit: contain;
-}
+    object-fit: contain;}
 
-@keyframes mainmove{
+@keyframes mainappear{
     0%, 35%{opacity: 0;}
-    100%{opacity: 1;}
-}
+    100%{opacity: 1;}}
+
 
 
 /* ASIDE */
@@ -115,52 +107,52 @@ aside{
     margin-left: 50px;
     opacity: 0.7;
     position: relative;
-    animation: asidemove 10s;
-}
+    animation: asidemove 10s;}
 
 aside>img{
     text-align: center;
     align-items: center;
     max-width: 60%;
-    object-fit: contain;
-}
+    object-fit: contain;}
+
+aside a{
+    color: whitesmoke;
+    text-decoration: none;}
 
 #asideBooks{
-    border-left: solid goldenrod;
-}
+    border-left: solid goldenrod;}
 
 @keyframes asidemove{
     from {right: -500px;}
     to {right: 0px;}
     0%, 35%{opacity: 0;}
-    100%{opacity: 0.7;}
-}
+    100%{opacity: 0.7;}}
+
+
 
 /* FOOTER */
 footer{
     grid-area: footer;
     color: goldenrod;
     bottom: 0;
-    margin-left: 20px;
-}
+    margin-left: 20px;}
 
 
 
 /* TABLET */
 @media screen and (max-width: 1000px){
     body{
-    display: grid;
-    grid-template-columns: 3fr 9fr;
-    grid-template-rows: auto auto auto 3em;
-    grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";}
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        grid-template-rows: auto auto auto 3em;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";}
 
-#asideBooks{
-    display: none;
-    }
+    #asideBooks{
+        display: none;}
 }
 
 
@@ -174,49 +166,38 @@ footer{
         grid-template-areas: 
         "header"
         "nav"
-        "trailer"
+        "video"
         "main"
         "footer";}
 
-header{
-    animation: none;
-    }
+    header{
+        animation: none;}
 
-nav{
-    display: flex;
-    justify-content: center;
-    animation: none;
-}
+    nav{
+        display: flex;
+        justify-content: center;
+        animation: none;}
 
-nav ul{
-    padding-inline-start: 0px;
-}
+    nav ul{
+        padding-inline-start: 0px;}
 
+    main{
+        grid-area: main;
+        display: block;
+        animation: mainmove 1s;}
 
-main{
-    grid-area: main;
-    display: block;
-    animation: mainmove 1s;
-}
+    video{
+        grid-area: video;
+        max-width: 100%;
+        object-fit: contain;}
 
+    article{
+        grid-area: main;
+        align-items: center;
+        margin: 0 auto;}
 
-video{
-    grid-area: trailer;
-    max-width: 100%;
-    object-fit: contain;
-}
-
-
-article{
-    grid-area: main;
-    align-items: center;
-    margin: 0 auto;
-}
-
-footer{
-    margin: 0 auto;
-}
-
+    footer{
+        margin: 0 auto;}
 }
 
 
