@@ -23,6 +23,8 @@ aside{
 h1{
     animation: mainappear 1.5s;}
 
+
+    
 /* H-ELEMENTS */
 h1{
     text-align: center;
@@ -50,7 +52,7 @@ h2{
 
 /* ASIDE */
 #asideMedallion{
-    max-width: 80%;}
+    max-width: 100%;}
 
 #asideMedallion:hover{
     animation: medalionShake 0.7s infinite;}
