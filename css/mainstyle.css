@@ -13,7 +13,7 @@ html{
 
 /* BODY */
 body{
-    background-image: url(/images/witcherBackground.jpg);
+    background-image: url(/images/fogBackground.jpg);
     max-height: fit-content;
     background-position: center;
     background-size: cover;
@@ -37,7 +37,7 @@ header{
 #titlePicture{
     display: block;
     margin: 0 auto;
-    width: 75%;
+    width: 60%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -100,7 +100,8 @@ aside{
 }
 
 #asideImage{
-    max-width: 200px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 
@@ -108,7 +109,7 @@ aside{
 /* FOOTER */
 footer{
     grid-area: footer;
-    color: black;
+    color: goldenrod;
     bottom: 0;
     margin-left: 20px;
 }
