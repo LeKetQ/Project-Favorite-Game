@@ -116,3 +116,62 @@ footer{
 
 
 
+/* TABLET */
+@media screen and (max-width: 1000px){
+    body{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: auto auto auto 3em;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";}
+
+    #aside{
+        display: none;
+    }
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width: 640px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto  auto 3em;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "trailer"
+        "main"
+        "footer";}
+
+
+    main{
+        grid-area: main;
+        display: block;
+    }
+
+video{
+    grid-area: trailer;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+article{
+    grid-area: main;
+    align-items: center;
+    margin: 0 auto;
+}
+
+footer{
+    margin: 0 auto;
+}
+
+}
+
+
+
