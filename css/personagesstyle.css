@@ -1,0 +1,25 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+figure{
+    transition: 1s;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+figure:hover{
+    transition: 1s;
+    opacity: 1.0;
+}
+
+.characters>img{
+    object-fit: contain;
+    max-width: 300px;
+}
+
+
+
