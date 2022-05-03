@@ -6,6 +6,7 @@
 /* HTML */
 html{
     font-family: 'Witcher Font';
+    color: goldenrod;
 }
 
 
@@ -86,6 +87,11 @@ main{
 /* ASIDE */
 aside{
     grid-area: aside;
+    padding: 10px 10px 10px 10px;
+}
+
+#asideImage{
+    max-width: 200px;
 }
 
 
