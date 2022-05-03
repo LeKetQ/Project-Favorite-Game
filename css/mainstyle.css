@@ -46,6 +46,25 @@ header{
 /* NAV */
 nav{
     grid-area: nav;
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    margin-top: 20px;
+    border: 2px solid black;
+    width: 100px;
+    padding: 10px;
+    background-color: brown;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
 }
 
 
