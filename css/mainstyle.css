@@ -32,6 +32,8 @@ body{
 /* HEADER */
 header{
     grid-area: header;
+    position: relative;
+    animation: headermove 5s;
 }
 
 #titlePicture{
@@ -42,11 +44,18 @@ header{
     margin-bottom: 20px;
 }
 
+@keyframes headermove {
+    from {top: 500px;}
+    to {top: 0px;}
+  }
 
 
 /* NAV */
 nav{
     grid-area: nav;
+    opacity: 0.7;
+    position: relative;
+    animation: navmove 5s;
 }
 
 nav ul{
@@ -66,12 +75,21 @@ a{
     text-decoration: none;
 }
 
+nav li:hover{
+    transform:scale(2.0);
+}
 
+@keyframes navmove {
+    from {left: -250px;}
+    to {left: 0px;}
+  }
 
 /* MAIN */
 main{
     grid-area: main;
     display: flex;
+    position: relative;
+    animation: mainmove 8s;
 }
 
 article{
@@ -84,12 +102,19 @@ video{
     object-fit: contain;
 }
 
+@keyframes mainmove{
+    0%, 35%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
 /* ASIDE */
 aside{
     grid-area: aside;
     padding: 10px 10px 10px 10px;
     opacity: 0.7;
-
+    position: relative;
+    animation: asidemove 5s;
 }
 
 #asideImage{
@@ -97,7 +122,10 @@ aside{
     object-fit: contain;
 }
 
-
+@keyframes asidemove{
+    from {right: -500px;}
+    to {right: 0px;}
+}
 
 /* FOOTER */
 footer{
