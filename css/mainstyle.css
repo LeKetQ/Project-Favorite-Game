@@ -3,10 +3,14 @@
     src: url(/fonts/witcherFont.ttf);
 }
 
+/* HTML */
 html{
     font-family: 'Witcher Font';
 }
 
+
+
+/* BODY */
 body{
     background-image: url(/images/witcherBackground.jpg);
     max-height: fit-content;
@@ -21,4 +25,49 @@ body{
     "nav main aside"
     "footer footer footer";
 }
+
+
+
+/* HEADER */
+header{
+    grid-area: header;
+}
+
+#titlePicture{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* NAV */
+nav{
+    grid-area: nav;
+}
+
+
+
+/* MAIN */
+main{
+    grid-area: main;
+}
+
+
+
+/* ASIDE */
+aside{
+    grid-area: aside;
+}
+
+
+
+/* FOOTER */
+footer{
+    grid-area: footer;
+}
+
+
 
