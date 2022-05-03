@@ -6,3 +6,18 @@
 html{
     font-family: 'Witcher Font';
 }
+
+body{
+    background-image: url(/images/witcherBackground.jpg);
+    max-height: fit-content;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: auto auto 3em;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+}
