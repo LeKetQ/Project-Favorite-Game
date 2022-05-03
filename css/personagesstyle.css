@@ -9,24 +9,22 @@ h1{
     font-size: 50px;
 }
 
-figure{
-    transition: 1s;
-    opacity: 0.6;
-    margin: 10px;
-}
-
-figure>h2{
+h2{
     text-align: center;
-}
-
-figure:hover{
-    transition: 1s;
-    opacity: 1.0;
 }
 
 .characters{
     object-fit: contain;
     max-width: 300px;
+    transition: 1s;
+    opacity: 0.6;
+    margin: 10px;
+}
+
+.characters:hover{
+    transition: 1s;
+    opacity: 1.0;
+    transform:scale(1.2);
 }
 
 

@@ -88,13 +88,8 @@ video{
 aside{
     grid-area: aside;
     padding: 10px 10px 10px 10px;
-    opacity: 0.5;
-    transition: 1s;
-}
+    opacity: 0.7;
 
-aside:hover{
-    opacity: 1.0;
-    transition: 1s;
 }
 
 #asideImage{
