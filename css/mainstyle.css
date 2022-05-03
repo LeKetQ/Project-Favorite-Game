@@ -55,18 +55,25 @@ nav ul{
 
 nav li{
     margin-top: 20px;
-    border: 2px solid black;
+    border: 2px solid goldenrod;
     width: 100px;
-    padding: 10px;
-    background-color: brown;
+    padding: 5px;
+    background-color: black;
 }
 
-nav a {
+nav a{
     color: whitesmoke;
     text-decoration: none;
     display: block;
 }
 
+nav li:hover{
+    background-color: white;
+}
+
+nav a:hover{
+    color: black;
+}
 
 
 /* MAIN */
@@ -86,6 +93,9 @@ aside{
 /* FOOTER */
 footer{
     grid-area: footer;
+    color: black;
+    bottom: 0;
+    margin-left: 20px;
 }
 
 
