@@ -39,7 +39,7 @@ header{
 #titlePicture{
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -121,9 +121,6 @@ aside{
 aside>img{
     text-align: center;
     align-items: center;
-}
-
-#asideImage{
     max-width: 60%;
     object-fit: contain;
 }
