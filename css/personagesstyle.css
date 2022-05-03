@@ -4,11 +4,19 @@ main{
     justify-content: center;
 }
 
+h1{
+    text-align: center;
+    font-size: 50px;
+}
 
 figure{
     transition: 1s;
-    opacity: 0.5;
+    opacity: 0.6;
     margin: 10px;
+}
+
+figure>h2{
+    text-align: center;
 }
 
 figure:hover{
@@ -16,7 +24,7 @@ figure:hover{
     opacity: 1.0;
 }
 
-.characters>img{
+.characters{
     object-fit: contain;
     max-width: 300px;
 }
