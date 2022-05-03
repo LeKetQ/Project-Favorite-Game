@@ -80,9 +80,18 @@ nav a:hover{
 /* MAIN */
 main{
     grid-area: main;
+    display: flex;
 }
 
+article{
+    width: 50%;
+    margin: 10px;
+}
 
+video{
+    max-width: 100%;
+    object-fit: contain;
+}
 
 /* ASIDE */
 aside{
