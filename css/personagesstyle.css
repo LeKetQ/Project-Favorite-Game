@@ -34,7 +34,7 @@ h2{
  /* CHARACTER PICTURES */   
 .characters{
     object-fit: contain;
-    max-width: 300px;
+    max-width: 200px;
     transition: 1s;
     opacity: 0.8;
     margin: 10px;}
@@ -66,4 +66,6 @@ aside:hover #medallion{
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }}
 
-
+@media screen and (max-width: 1500px) {
+    main{
+        flex-direction: row;}}

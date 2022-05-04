@@ -35,7 +35,7 @@ header{
     grid-area: header;
     position: relative;
     animation: headermove 5s;
-animation-timing-function: ease-in-out;}
+    animation-timing-function: ease-in-out;}
 
 #titlePicture{
     display: block;
@@ -103,7 +103,7 @@ main{
 
 article{
     width: 50%;
-    margin: 15px;}
+    margin: 25px;}
 
 video{
     max-width: 100%;
@@ -166,25 +166,35 @@ footer{
     to{opacity: 0.8;}}
 
 
+
+/* RESPONSIVE TWEAKING*/
+@media screen and (max-width: 1500px){
+    main{
+        flex-direction: column;}
+
+    article{
+        width: 100%;}}
     
-/* TABLET */
-@media screen and (max-width: 1200px){
+
+
+@media screen and (max-width: 1040px){
     body{
         display: grid;
         grid-template-columns: 3fr 9fr;
         grid-template-rows: auto auto auto 3em;
         grid-template-areas: 
         "header header"
-        "nav nav"
-        "main main"
+        "nav main"
         "footer footer";}
+        
+    article{
+        max-width: 90%;}
 
     aside{
         display: none;}}
 
+ 
 
-
-/* MOBILE */
 @media screen and (max-width: 640px){
     body{
         display: grid;
@@ -201,8 +211,6 @@ footer{
         animation: none;}
 
     nav{
-        display: flex;
-        justify-content: center;
         animation: none;}
 
     nav ul{
@@ -210,7 +218,7 @@ footer{
 
     main{
         grid-area: main;
-        display: block;
+        display: flex;
         animation: mainmove 1s;}
 
     video{

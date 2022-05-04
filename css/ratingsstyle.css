@@ -24,8 +24,8 @@ article{
 article:nth-child(odd){
     text-align: end;}
 
-article>figure>img{
-    width: 15%;}
+a>img{
+    width: 25%;}
 
 article>figure{
     margin: 0px;}
@@ -36,3 +36,7 @@ article>a{
 
 article>p{
     font-size: 22px;}
+
+#asideGameCover{
+        width: 90%;
+    }
