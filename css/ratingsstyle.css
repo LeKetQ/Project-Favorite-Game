@@ -1,0 +1,26 @@
+/* ANIMATIONS */
+header{
+    animation: none;}
+
+main, nav, aside, h1{
+    animation: mainappear 1.5s;}
+
+
+
+/* MAIN */
+main{
+    flex-direction: column;}
+
+article{
+    width: 100%;}
+
+article:nth-child(odd){
+    text-align: end;}
+
+article>figure>img{
+    width: 15%;
+}
+
+article>figure{
+    margin: 0px;
+}
