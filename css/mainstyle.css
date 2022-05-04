@@ -34,7 +34,8 @@ body{
 header{
     grid-area: header;
     position: relative;
-    animation: headermove 5s;}
+    animation: headermove 5s;
+animation-timing-function: ease-in-out;}
 
 #titlePicture{
     display: block;
@@ -45,7 +46,7 @@ header{
 
 @keyframes headermove {
     from {top: 500px;}
-    to {top: 0px;}  }
+    to {top: 0px;}}
 
 
 
@@ -84,19 +85,21 @@ nav li:hover{
     margin-left: 0px;
     font-size: larger;}
 
+.currentPage{
+    color: goldenrod;}
+
 @keyframes navmove{
     from {left: -500px;}
     to {left: 0px;}}
 
-.currentPage{
-    color: goldenrod;}
+
 
 /* MAIN */
 main{
     grid-area: main;
     display: flex;
     position: relative;
-    animation: mainappear 8s;}
+    animation: mainappear 10s;}
 
 article{
     width: 50%;
@@ -153,11 +156,17 @@ section>img{
 footer{
     grid-area: footer;
     color: goldenrod;
+    opacity: 0.8;
     bottom: 0;
-    margin-left: 20px;}
+    margin-left: 20px;
+    animation: footerappear 10s;}
+
+@keyframes footerappear{
+    from{opacity: 0.0;}
+    to{opacity: 0.8;}}
 
 
-
+    
 /* TABLET */
 @media screen and (max-width: 1200px){
     body{
