@@ -47,13 +47,13 @@ h2{
 
 
 /* ASIDE */
-#asideMedallion{
+#medallion{
     max-width: 100%;}
 
-#asideMedallion:hover{
-    animation: medalionShake 0.7s infinite;}
+aside:hover #medallion{ 
+    animation: medallionShake 0.7s infinite;}
 
-@keyframes medalionShake{
+@keyframes medallionShake{
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
