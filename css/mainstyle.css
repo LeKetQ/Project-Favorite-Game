@@ -98,11 +98,12 @@ main{
 
 article{
     width: 50%;
-    margin: 10px;}
+    margin: 15px;}
 
 video{
     max-width: 100%;
-    object-fit: contain;}
+    object-fit: contain;
+    margin-top: 20px;}
 
 @keyframes mainappear{
     0%, 35%{opacity: 0;}
