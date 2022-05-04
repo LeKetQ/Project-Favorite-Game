@@ -10,10 +10,16 @@ main{
 header{
     animation: none;}
 
-main, nav, aside, h1{
+main, h1{
     animation: mainappear 1.5s;}
 
+nav{
+    animation: navmove 1.5s;}
 
+aside{
+    animation: asidemove 1.5s;}
+
+    
     
 /* H-ELEMENTS */
 h1{

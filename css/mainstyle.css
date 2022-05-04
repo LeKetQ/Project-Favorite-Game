@@ -21,7 +21,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 2fr 8fr 300px;
     grid-template-rows: auto auto 3em;
     grid-template-areas: 
     "header header header"

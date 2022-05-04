@@ -2,8 +2,14 @@
 header{
     animation: none;}
 
-main, nav, aside, h1{
+main, h1{
     animation: mainappear 1.5s;}
+
+nav{
+    animation: navmove 1.5s;}
+
+aside{
+    animation: asidemove 1.5s;}
 
 
 
@@ -12,15 +18,28 @@ main{
     flex-direction: column;}
 
 article{
-    width: 100%;}
+    width: 95%;
+    height: auto;}
 
 article:nth-child(odd){
     text-align: end;}
 
 article>figure>img{
-    width: 15%;
-}
+    width: 15%;}
 
 article>figure{
-    margin: 0px;
-}
+    margin: 0px;}
+
+article>a{
+    text-decoration: none;
+    color: whitesmoke;}
+
+article>p{
+    font-size: 22px;}
+
+
+
+    /* TEMPORARY */
+    /* ASIDE */
+#asideMedallion{
+    max-width: 100%;}
