@@ -1,4 +1,12 @@
 
+:root{
+    --blood: rgba(217, 35, 50, 0.85);
+    --night-black: rgba(0, 0, 0, 0.5);
+    --witcher-white: rgba(227, 236, 236, 0.93);
+    --witcher-grey: rgba(157, 174, 176, 0.69);
+}
+
+
 /* WITCHER FONT */
 @font-face {
     font-family: "Witcher Font";
@@ -9,8 +17,10 @@
 /* HTML */
 html{
     font-family: 'Witcher Font';
-    color: goldenrod;}
-
+    color: var(--witcher-white);
+    overflow-x: hidden;
+    letter-spacing: 1px;
+}
 
 
 /* BODY */
@@ -64,17 +74,17 @@ nav ul{
 nav li{
     margin-top: 15px;
     margin-left: -65px;
-    border: 1px solid rgba(218, 165, 32, 0.8);
+    border: 2px solid var(--witcher-grey);
     width: 175px;
     height: 25px;
     padding: 10px;
     text-align: end;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--night-black);
     opacity: 0.7;
     transition: 1.5s;}
 
 nav a{
-    color: rgba(245, 245, 245, 0.8);
+    color: var(--witcher-white);
     text-decoration: none;
     display: block;}
 
@@ -86,7 +96,7 @@ nav li:hover{
     font-size: larger;}
 
 .currentPage{
-    color: goldenrod;}
+    color: var(--blood);}
 
 @keyframes navmove{
     from {left: -500px;}
@@ -131,7 +141,7 @@ aside:hover{
     transition: 1.5s;}
 
 aside a{
-    color: whitesmoke;
+    color: var(--blood);
     text-decoration: none;}
 
 @keyframes asidemove{
@@ -141,7 +151,7 @@ aside a{
     100%{opacity: 0.7;}}
 
 section{
-    border-left: 1px solid goldenrod;
+    border-left: 2px solid var(--witcher-grey);
     padding-left: 20px;}
 
 section>img{
@@ -155,7 +165,7 @@ section>img{
 /* FOOTER */
 footer{
     grid-area: footer;
-    color: goldenrod;
+    color: var(--blood);
     opacity: 0.8;
     bottom: 0;
     margin-left: 20px;

@@ -32,7 +32,7 @@ article>figure{
 
 article>a{
     text-decoration: none;
-    color: whitesmoke;}
+    color: var(--blood);}
 
 article>p{
     font-size: 22px;}
