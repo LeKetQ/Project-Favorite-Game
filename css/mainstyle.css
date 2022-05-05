@@ -31,7 +31,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: 280px auto 280px;
+    grid-template-columns: 250px auto 250px;
     grid-template-rows: auto auto 3em;
     grid-template-areas: 
     "header header header"
@@ -52,7 +52,7 @@ header{
     margin: 0 auto;
     width: 30%;
     margin-top: 20px;
-    margin-bottom: 20px;}
+    margin-bottom: 50px;}
 
 @keyframes headermove {
     from {top: 500px;}
@@ -155,10 +155,10 @@ section{
     padding-left: 20px;}
 
 section>img{
-        text-align: center;
-        align-items: center;
-        max-width: 100%;
-        object-fit: contain;}
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    object-fit: contain;}
 
 
 
@@ -183,11 +183,11 @@ footer{
         flex-direction: column;}
 
     article{
-        width: 100%;}}
+        width: auto;}}
     
 
 
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 1000px){
     body{
         display: grid;
         grid-template-columns: 3fr 9fr;
@@ -196,16 +196,13 @@ footer{
         "header header"
         "nav main"
         "footer footer";}
-        
-    article{
-        max-width: 90%;}
 
     aside{
         display: none;}}
 
  
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 850px){
     body{
         display: grid;
         grid-template-columns: 1fr;
@@ -229,17 +226,15 @@ footer{
     main{
         grid-area: main;
         display: flex;
-        animation: mainmove 1s;}
+        animation: mainappear 1s;}
 
     video{
         grid-area: video;
-        max-width: 100%;
-        object-fit: contain;}
+        max-width: 90%;
+        margin-left: 5%;}
 
     article{
-        grid-area: main;
-        align-items: center;
-        margin: 0 auto;}
+        grid-area: main;}
 
     footer{
         margin: 0 auto;}}
