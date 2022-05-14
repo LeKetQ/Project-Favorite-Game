@@ -36,7 +36,7 @@ h2{
     object-fit: contain;
     max-width: 200px;
     transition: 1s;
-    opacity: 0.8;
+    opacity: 0.9;
     margin: 10px;}
 
 .characters:hover{

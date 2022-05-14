@@ -9,14 +9,14 @@
 
 /* WITCHER FONT */
 @font-face {
-    font-family: "Witcher Font";
-    src: url(/fonts/witcherFont.ttf);}
+    font-family: "witcher-font";
+    src: url(/fonts/witcher-font.ttf);}
 
 
 
 /* HTML */
 html{
-    font-family: 'Witcher Font';
+    font-family: 'witcher-font';
     color: var(--witcher-white);
     overflow-x: hidden;
     letter-spacing: 1px;
@@ -25,7 +25,7 @@ html{
 
 /* BODY */
 body{
-    background-image: url(/images/fogBackground.jpg);
+    background-image: url(/images/background-fog.jpg);
     max-height: fit-content;
     background-position: center;
     background-size: cover;
@@ -47,7 +47,7 @@ header{
     animation: headermove 5s;
     animation-timing-function: ease-in-out;}
 
-#titlePicture{
+#title-picture{
     display: block;
     margin: 0 auto;
     width: 30%;
@@ -95,7 +95,7 @@ nav li:hover{
     margin-left: 0px;
     font-size: larger;}
 
-.currentPage{
+.current-page{
     color: var(--blood);}
 
 @keyframes navmove{
