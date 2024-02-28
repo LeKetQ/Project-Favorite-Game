@@ -1,1 +1,1 @@
-# PE-03-Favoriete-game
+# Learn HTML - CSS project: Favorite Game
