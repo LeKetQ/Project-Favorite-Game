@@ -25,7 +25,7 @@ html{
 
 /* BODY */
 body{
-    background-image: url("../images/background-fog.jpg");
+    background-image: linear-gradient(to right, black, #333333);
     max-height: fit-content;
     background-position: center;
     background-size: cover;
